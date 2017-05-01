@@ -19,12 +19,11 @@ const markPlay = (position, mark) => {
 
 const visualizeBoard = () => {
   console.log('\n' +
-        ' ' + board[1] + ' | ' + board[2] + ' | ' + board[3] + '\n' +
-        ' ---------\n' +
-        ' ' + board[4] + ' | ' + board[5] + ' | ' + board[6] + '\n' +
-        ' ---------\n' +
-        ' ' + board[7] + ' | ' + board[8] + ' | ' + board[9] + '\n');
-
+  ' ' + board[1] + ' | ' + board[2] + ' | ' + board[3] + '\n' +
+  ' ---------\n' +
+  ' ' + board[4] + ' | ' + board[5] + ' | ' + board[6] + '\n' +
+  ' ---------\n' +
+  ' ' + board[7] + ' | ' + board[8] + ' | ' + board[9] + '\n');
 };
 
 const isInt = (value) => {
@@ -87,11 +86,11 @@ const playTurn = (player) => {
 };
 
 console.log('Game started: \n' +
-    ' 1 | 2 | 3 \n' +
-    ' --------- \n' +
-    ' 4 | 5 | 6 \n' +
-    ' --------- \n' +
-    ' 7 | 8 | 9 \n');
+  ' 1 | 2 | 3 \n' +
+  ' --------- \n' +
+  ' 4 | 5 | 6 \n' +
+  ' --------- \n' +
+  ' 7 | 8 | 9 \n');
 
 
 playTurn('X');
