@@ -14,7 +14,7 @@ let board = {
 };
 
 const markPlay = (position, mark) => {
-  board[position] = mark.toUpperCase();
+  board[position] = mark;
 };
 
 const visualizeBoard = () => {
@@ -37,17 +37,15 @@ const isInt = (value) => {
 };
 
 const validateMove = (position) => {
-  if (isInt(position) === true && board[position] === ' ') {
+  if (isInt(position) && board[position] === ' ') {
     return true;
   }
   return false;
 };
 
-// Everyone possible combination of three in a row
 const winCombinations = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7],
                        [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
 
-// Determins if the passed in player has three in a row
 const checkWin = (player) => {
   for (let i = 0; i < winCombinations.length; i++) {
     let markCount = 0;
@@ -69,10 +67,10 @@ const playTurn = (player) => {
   prompt.start();
   prompt.get(['position'], function (err, result) {
 
-    if (validateMove(result.position) === true) {
+    if (validateMove(result.position)) {
       markPlay(result.position, player);
       visualizeBoard();
-      if (checkWin(player) === true) {
+      if (checkWin(player)) {
         console.log('You won');
         return;
       }
