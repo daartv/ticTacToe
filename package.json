@@ -1,0 +1,30 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "A simple Tic Tac Toe game for the command line",
+  "main": "https://github.com/daartv/ticTacToe",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daartv/ticTacToe.git"
+  },
+  "keywords": [
+    "tic",
+    "tac",
+    "toe",
+    "game",
+    "command",
+    "prompt"
+  ],
+  "author": "Dario Arteaga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daartv/ticTacToe/issues"
+  },
+  "homepage": "https://github.com/daartv/ticTacToe#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
